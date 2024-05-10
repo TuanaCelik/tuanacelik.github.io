@@ -652,6 +652,16 @@ video {
   height: 0.75rem;
 }
 
+.size-24 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.size-32 {
+  width: 8rem;
+  height: 8rem;
+}
+
 .h-screen {
   height: 100vh;
 }
