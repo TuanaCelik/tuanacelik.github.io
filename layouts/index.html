@@ -1,198 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tuana" />
-    <meta property="og:url" content="http://tuana.dev/" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="http://tuana.dev/images/rocket.png" />
+<html lang="en" class="scroll-smooth">
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="http://tuana.dev/" />
-    <meta property="twitter:title" content="Tuana" />
-    <meta property="twitter:description" content="Tuana" />
-    <meta
-      property="twitter:image"
-      content="http://tuana.dev/images/rocket.png"
-    />
-    <meta charset="UTF-8" />
-    {{ $style := resources.Get "css/output.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" />
-    <link rel="icon" href="images/favicon.ico" type="image/png" />
-    <title>Tuana</title>
-  </head>
-  <body class="flex bg-emerald-50">
-    <div class="sticky top-0 h-screen w-64 bg-rose-200 flex flex-col">
-        <img
-        src="https://user-images.githubusercontent.com/15802862/220481971-ce7feeef-d5a3-4916-b8c3-feaf094e489f.png"
-        class="opacity-30 hover:opacity-100 transition-opacity"
-         />
-      <nav class="w-full flex-grow flex flex-col items-center justify-center">
-        <img
-          src="/images/profile.jpg"
-          alt=""
-          class="size-32 rounded-full object-cover block"
-        />
-        <a href="#about" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">About</a>
-        <a href="#articles" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">Articles</a>
-        <a href="#projects" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">Projects</a>
-        <a href="#talks" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">Talks & Videos</a>
-      </nav>
+<head>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tuana" />
+  <meta property="og:url" content="http://tuana.dev/" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="http://tuana.dev/images/rocket.png" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="http://tuana.dev/" />
+  <meta property="twitter:title" content="Tuana" />
+  <meta property="twitter:description" content="Tuana" />
+  <meta property="twitter:image" content="http://tuana.dev/images/rocket.png" />
+  <meta charset="UTF-8" />
+  {{ $style := resources.Get "css/output.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" />
+  <link rel="icon" href="images/favicon.ico" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Tuana</title>
+</head>
+
+<body class="flex bg-emerald-50">
+  <div class="sticky top-0 h-screen w-64 bg-rose-200 flex flex-col items-center">
+    <img src="https://user-images.githubusercontent.com/15802862/220481971-ce7feeef-d5a3-4916-b8c3-feaf094e489f.png"
+      class="opacity-30 hover:opacity-100 transition-opacity" />
+
+    <div class="flex-grow grow-[1] justify-center flex flex-col">
+      <img src="/images/profile.jpg" alt="" class="size-40 rounded-full object-cover block my-5" />
+    </div>
+    <nav class="w-full flex-grow grow-[2] flex flex-col items-center justify-start">
+      <a href="#about" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">About</a>
+      <a href="#articles" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">Articles</a>
+      <a href="#projects" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">Projects</a>
+      <a href="#talks" class="block p-4 text-lg text-center mx-4 hover:text-emerald-500">Talks & Videos</a>
+    </nav>
+  </div>
+
+  <div class="flex-1 overflow-auto p-8 space-y-4">
+    <span id="about"></span>
+
+    <div class="flex flex-row items-center pt-20 w-full">
+      <h1 class="text-5xl font-bold py-5 inline-block">Tuana Çelik</h1>
+      <!-- <img src="https://placehold.co/461x100" class="ml-auto" /> -->
+    </div>
+    <nav class="flex space-x-2">
+      <a href="https://github.com/TuanaCelik"
+        class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700">
+        <span class="sr-only">GitHub</span>
+        <svg class="size-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>GitHub</title>
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </svg>
+      </a>
+      <a href="https://twitter.com/TuanaCelik"
+        class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700">
+        <span class="sr-only">Twitter/X</span>
+        <svg class="size-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>X</title>
+          <path
+            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/tuanacelik/"
+        class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700">
+        <span class="sr-only">LinkedIn</span>
+        <svg class="size-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>LinkedIn</title>
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@TuanaCelik"
+        class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700">
+        <span class="sr-only">YouTube</span>
+        <svg class="size-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>YouTube</title>
+          <path
+            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+    </nav>
+
+    <div class="flex flex-col space-y-2">
+      {{ .Content }}
     </div>
 
-    <div class="flex-1 overflow-auto p-8 space-y-4">
-      <span id="about"></span>
+    <h2 class="text-3xl font-bold pt-20" id="articles">Articles</h2>
+    {{ $articles := .Site.GetPage "/articles" }}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {{ range $articles.Params.articleList }}
+      <article class="group">
+        <div class="p-4">
+          <a href="{{ .url }}">
+            <h3 class="text-lg font-medium text-gray-900 hover:text-gray-400">
+              {{ .title }}
+            </h3>
+          </a>
 
-      <div class="flex flex-row items-center pt-20 w-full">
-        <h1 class="text-5xl font-bold py-5 inline-block">Tuana Çelik</h1>
-        <!-- <img src="https://placehold.co/461x100" class="ml-auto" /> -->
-      </div>
-      <nav class="flex space-x-2">
-        <a
-          href="https://github.com/TuanaCelik"
-          class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700"
-        >
-          <span class="sr-only">GitHub</span>
-          <svg
-            class="size-3"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>GitHub</title>
-            <path
-              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://twitter.com/TuanaCelik"
-          class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700"
-        >
-          <span class="sr-only">Twitter/X</span>
-          <svg
-            class="size-3"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>X</title>
-            <path
-              d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/tuanacelik/"
-          class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700"
-        >
-          <span class="sr-only">LinkedIn</span>
-          <svg
-            class="size-3"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>LinkedIn</title>
-            <path
-              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://www.youtube.com/@TuanaCelik"
-          class="inline-block rounded-full p-3 text-white bg-gradient-to-r from-gray-700 via-gray-900 to-black hover:from-gray-800 hover:to-gray-700"
-        >
-          <span class="sr-only">YouTube</span>
-          <svg
-            class="size-3"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>YouTube</title>
-            <path
-              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-            />
-          </svg>
-        </a>
-      </nav>
+          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            {{ .summary }}
+          </p>
+        </div>
+      </article>
+      {{ end }}
+    </div>
 
-      {{ .Content }}
-
-      <h2 class="text-3xl font-bold pt-20" id="articles">Articles</h2>
-      {{ $articles := .Site.GetPage "/articles" }}
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {{ range $articles.Params.articleList }}
-          <article class="group">
-            <div class="p-4">
-              <a href="{{ .url }}">
-                <h3 class="text-lg font-medium text-gray-900">
-                  {{ .title }}
-                </h3>
-              </a>
-  
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                {{ .summary }}
-              </p>
-            </div>
-          </article>
-        {{ end }}
-      </div>
-
-      <h2 class="text-3xl font-bold pt-20" id="projects">Projects</h2>
-      {{ $projects := .Site.GetPage "/projects" }}
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {{ range $projects.Params.projectsList }}
-        <div>
-          <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
-          >
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-              <!-- <time datetime="2022-10-10" class="block text-xs text-gray-500">
+    <h2 class="text-3xl font-bold pt-20" id="projects">Projects</h2>
+    {{ $projects := .Site.GetPage "/projects" }}
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4">
+      {{ range $projects.Params.projectsList }}
+        <article
+          class="h-full hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] overflow-hidden">
+          <div class="h-full rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
+            <!-- <time datetime="2022-10-10" class="block text-xs text-gray-500">
                 10th Oct 2022
               </time> -->
 
-              <a href="{{ .url }}">
-                <h1 class="mt-0.5 text-5xl">
-                    {{ .emoji }}
-                </h1>
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                  {{ .title }}
-                </h3>
-                <h4 class="mt-0.5 text-purple-400 font-small text-gray-900">
-                    {{ .description }}
-                </h4>
-              </a>
+            <a href="{{ .url }}">
+              <h1 class="mt-0.5 text-5xl">
+                {{ .emoji }}
+              </h1>
+              <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+                {{ .title }}
+              </h3>
+              <h4 class="mt-0.5 text-purple-400 font-small text-gray-900">
+                {{ .description }}
+              </h4>
+            </a>
 
-              <div class="mt-4 flex flex-wrap gap-1">
-                <span
-                  class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-                >
-                  {{ .type }}
-                </span>
-              </div>
+            <div class="mt-4 flex flex-wrap gap-1 max-w-full overflow-x-auto">
+              <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                {{ .type }}
+              </span>
             </div>
-          </article>
-        </div>
-        {{ end }}
-      </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
 
     <h2 class="text-3xl font-bold pt-20" id="talks">Talks & Videos</h2>
 
-      {{ $talks := .Site.GetPage "/talks-and-videos" }}
+    {{ $talks := .Site.GetPage "/talks-and-videos" }}
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {{ range $talks.Params.videoList }}
-            <div class="aspect-w-16 aspect-h-9">
-                <iframe
-                src="{{ .url }}"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                ></iframe>
-            </div>
-        {{ end }}
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {{ range $talks.Params.videoList }}
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe src="{{ .url }}" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
-  </body>
+      {{ end }}
+    </div>
+</body>
+
 </html>
