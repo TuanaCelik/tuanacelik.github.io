@@ -2,6 +2,9 @@
 layout: videos
 
 videoList:
+  - url: https://www.youtube.com/embed/5PrzXaZ0-qk?si=VPiv8dYXUGeysXQK
+    description: Evaluating Retrieval Augmented Generation for a PubMed QA App
+
   - url: https://youtube.com/embed/SxAwyeCkguc
     description: 'Intro to Haystack Pipelines: Build and customize AI applications'
 
