@@ -2,7 +2,7 @@
 
 ---
 
-🥑 Develope Relations person and engineer currently working on [Haystack](https://github.com/deepset-ai/haystack)
+🥑 Developer Relations person and engineer currently working on [**Haystack**](https://github.com/deepset-ai/haystack)
 
 Main interets are: AI (specifically language technologies and LLMs) and Python.
 
