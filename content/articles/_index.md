@@ -2,6 +2,10 @@
 layout: list
 
 articleList:
+  - title: Building RAG Applications with NVIDIA NIM and Haystack on K8s
+    url: https://haystack.deepset.ai/blog/haystack-nvidia-nim-rag-guide
+    summary: How to self-host and orchestrate NVIDIA NIM for Haystack RAG pipelines in Kubernetes.
+
   - title: Chatting with SQL Databases 3 Ways
     url: https://haystack.deepset.ai/blog/chatting-with-sql-databases-3-ways
     summary: Using Haystack to talk to SQL in natural language
