@@ -2,6 +2,18 @@
 layout: videos
 
 videoList:
+  - url: https://youtu.be/qsn60ysTqXU?si=laHMW6eD-PTkslUn
+    description: PyCon 24'- Everything is a graph, including LLM Applications (and that’s handy)
+
+  - url: https://www.youtube.com/live/21DNJncemto?si=_BOmVB8VC8lW5rNd
+    description: Python RAG - Haystack and MongoDB Atlas
+    
+  - url: https://www.youtube.com/live/3zpv4qpNy8I?si=o0PbkT6s5ywcc6_s
+    description: How to Train a DE-licious Embedding Model
+
+  - url: https://youtu.be/_Jd63puToG8?si=kKNhMtlf-5eBv1LK
+    description: Sponsor Presentations - Finding the needle: a deep dive into the rewriting of Haystack
+    
   - url: https://www.youtube.com/embed/5PrzXaZ0-qk?si=VPiv8dYXUGeysXQK
     description: Evaluating Retrieval Augmented Generation for a PubMed QA App
 
