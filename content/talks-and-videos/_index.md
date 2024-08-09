@@ -12,7 +12,7 @@ videoList:
     description: How to Train a DE-licious Embedding Model
   
   - url: https://www.youtube.com/embed/_Jd63puToG8?si=vkxW7BpMDi8lU7Tr
-    description: Sponsor Presentations - Finding the needle: a deep dive into the rewriting of Haystack
+    description: 'Sponsor Presentations - Finding the needle: a deep dive into the rewriting of Haystack'
     
   - url: https://www.youtube.com/embed/5PrzXaZ0-qk?si=VPiv8dYXUGeysXQK
     description: Evaluating Retrieval Augmented Generation for a PubMed QA App
