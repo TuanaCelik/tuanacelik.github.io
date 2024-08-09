@@ -10,7 +10,7 @@ videoList:
     
   - url: https://www.youtube.com/embed/3zpv4qpNy8I?si=a4UW1RNi3ba1utRs
     description: How to Train a DE-licious Embedding Model
-
+  
   - url: https://www.youtube.com/embed/_Jd63puToG8?si=vkxW7BpMDi8lU7Tr
     description: Sponsor Presentations - Finding the needle: a deep dive into the rewriting of Haystack
     
