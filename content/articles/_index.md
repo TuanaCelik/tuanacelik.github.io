@@ -2,6 +2,10 @@
 layout: list
 
 articleList:
+  - title: Announcing Our New Short Course with DeepLearning.AI
+    url: https://haystack.deepset.ai/blog/announcing-dlai
+    summary: Enroll in "Building AI Applications with Haystack"
+
   - title: Building RAG Applications with NVIDIA NIM and Haystack on K8s
     url: https://haystack.deepset.ai/blog/haystack-nvidia-nim-rag-guide
     summary: How to self-host and orchestrate NVIDIA NIM for Haystack RAG pipelines in Kubernetes.
