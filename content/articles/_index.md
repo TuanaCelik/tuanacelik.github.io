@@ -6,6 +6,10 @@ articleList:
     url: https://haystack.deepset.ai/blog/announcing-dlai
     summary: Enroll in "Building AI Applications with Haystack"
 
+  - title: 'Advanced RAG: Query Expansion'
+    url: https://haystack.deepset.ai/blog/query-expansion
+    summary: Expand keyword queries to improve recall and provide more context to RAG.
+
   - title: Building RAG Applications with NVIDIA NIM and Haystack on K8s
     url: https://haystack.deepset.ai/blog/haystack-nvidia-nim-rag-guide
     summary: How to self-host and orchestrate NVIDIA NIM for Haystack RAG pipelines in Kubernetes.
