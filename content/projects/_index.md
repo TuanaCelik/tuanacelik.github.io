@@ -8,6 +8,12 @@ projectsList:
     emoji: 🚀
     type: 🟠 Colab
 
+  - url: https://colab.research.google.com/github/deepset-ai/haystack-cookbook/blob/main/notebooks/query-expansion.ipynb
+    title: 'Advanced RAG: Query Expansion'
+    description: Improve retrieval results with query expansion
+    emoji: ❓
+    type: 🟠 Colab
+
   - url: https://huggingface.co/spaces/Tuana/hackernews-summaries
     title: Hacker News Summaries
     description: A Streamlit app on Hugging Face that runs a summarizer pipeline with Haystack. 
