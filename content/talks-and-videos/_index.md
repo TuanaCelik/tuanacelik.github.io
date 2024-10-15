@@ -5,7 +5,7 @@ videoList:
   - url: https://www.youtube.com/embed/oluZaroQROM?si=KNROWwGm3k-3Ujvk
     description: Enroll in "Building AI Applications with Haystack," our new short course!
     
-  - url: https://www.youtube.com/embed/qsn60ysTqXU?si=m5NB7TuM7XQtVMx0"
+  - url: https://www.youtube.com/embed/Yd8weV0xCr4?si=hRXbrhD4aUrzcp74
     description: PyCon 24'- Everything is a graph, including LLM Applications (and that’s handy)
 
   - url: https://www.youtube.com/embed/21DNJncemto?si=JiUzgLWy6v0KfgoV
