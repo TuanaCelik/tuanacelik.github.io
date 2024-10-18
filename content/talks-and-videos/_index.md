@@ -2,6 +2,12 @@
 layout: videos
 
 videoList:
+  - url: https://www.youtube.com/embed/QWx3OzW2Pvo?si=gTGmitFNJ2VwZUb9
+    description: Adding Tools to Agentic Pipelines
+
+  - url: https://www.youtube.com/embed/kR4pVvBnOII?si=b4aFKoUojd0FikYV
+    description: Break Down Complex Questions with Query Decomposition
+    
   - url: https://www.youtube.com/embed/oluZaroQROM?si=KNROWwGm3k-3Ujvk
     description: Enroll in "Building AI Applications with Haystack," our new short course!
     
