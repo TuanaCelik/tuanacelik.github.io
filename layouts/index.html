@@ -98,6 +98,7 @@
       {{ range $articles.Params.articleList }}
       <article class="group">
         <div class="p-4">
+          <img src="{{ .thumbnail }}" loading="lazy">
           <a href="{{ .url }}">
             <h3 class="text-lg font-medium text-gray-900 hover:text-gray-400">
               {{ .title }}
