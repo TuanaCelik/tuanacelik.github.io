@@ -2,6 +2,14 @@
 layout: list
 
 articleList:
+  - title: Design Haystack AI Applications Visually with deepset Studio & NVIDIA NIMs
+    url: https://haystack.deepset.ai/blog/deepset-studio-and-nvidia-nims
+    summary: Visually architect agentic AI applications with deepset Studio
+
+  - title: 'Advanced RAG: Query Decomposition & Reasoning'
+    url: https://haystack.deepset.ai/blog/query-decomposition
+    summary: Decompose queries that are multiples in disguise and have an LLM reason about the final answer.
+
   - title: Announcing Our New Short Course with DeepLearning.AI
     url: https://haystack.deepset.ai/blog/announcing-dlai
     summary: Enroll in "Building AI Applications with Haystack"

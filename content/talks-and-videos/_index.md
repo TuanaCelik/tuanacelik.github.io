@@ -2,6 +2,9 @@
 layout: videos
 
 videoList:
+  - urk: https://www.youtube.com/embed/vk0U1V-cBK0?si=83cJrImnW-WAtRAW
+    description: Enrich Document Metadata with Structured Outputs
+
   - url: https://www.youtube.com/embed/QWx3OzW2Pvo?si=gTGmitFNJ2VwZUb9
     description: Adding Tools to Agentic Pipelines
 
