@@ -2,7 +2,7 @@
 
 ---
 
-🥑 Developer Relations person and engineer currently working on [**Haystack**](https://github.com/deepset-ai/haystack)
+🥑 Developer Relations and AI Engineering person currently working at [**Weaviate**](https://weaviate.io), previouslly worked on [**Haystack**](https://github.com/deepset-ai/haystack)
 
 Main interests are: AI (specifically language technologies and LLMs) and Python.
 
