@@ -2,6 +2,11 @@
 layout: list
 
 articleList:
+  - title: 'Agents Simplified: What we mean in the context of AI'
+    url: https://weaviate.io/blog/ai-agents
+    summary: What is an AI Agent? Learn how AI agents work, the benefits of using AI agents and more
+    thumbnail: /thumbnails/ai-agent.png
+    
   - title: Design Haystack AI Applications Visually with deepset Studio & NVIDIA NIMs
     url: https://haystack.deepset.ai/blog/deepset-studio-and-nvidia-nims
     summary: Visually architect agentic AI applications with deepset Studio
